@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="chiayi.css">
+    <title>chiayi</title>
+</head>
+<body>
+
+    <div class="catalog">
+        <div class="dot">
+        </div>
+        <div class="dot">
+        </div>
+        <div class="dot">
+        </div>
+    </div>
+    <div class="showPage" id="showPage">P</div>
+    <div id="pageNumber"></div>
+    </div>
+    </div>
+    </div>
+    <div class="content">
+        <div class="page" id="test">
+            <img id="myImage" src="./chiayi_picture/Chiayi_Cover1.png" alt="Chiayi_page1" onclick="doSomething()">
+        </div>
+        <div id="numberPage">1</div>
+        <div class="arrow">
+            <img src="arrow-next.png" onclick="nextImage()" alt="">
+            <img src="arrow-previous.png" onclick="prevImage()" alt="">
+        </div>
+        <div id="slider">
+        </div>
+    </div>
+    <div id="loading_start">
+        <lottie-player src="https://lottie.host/2553e2c9-6a4d-4a71-9985-3984b2ea3351/r1sgUZaldx.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player>
+    </div>
+</body>
+    <script src="chiayi.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script> 
+</html>
