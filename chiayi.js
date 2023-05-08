@@ -20,7 +20,7 @@ window.addEventListener('load', function () {
   var images = ["./chiayi_picture/Chiayi_Cover1.png","./chiayi_picture/Chiayi_page1.png", "./chiayi_picture/Chiayi_page2.png", "./chiayi_picture/Chiayi_page3.png", "./chiayi_picture/Chiayi_page4.png","./chiayi_picture/Chiayi_page5.png","./chiayi_picture/Chiayi_page6.png", "./chiayi_picture/Chiayi_page7.png", "./chiayi_picture/Chiayi_page8.png", "./chiayi_picture/Chiayi_page9.png","./chiayi_picture/Chiayi_page10.png",
                 "./chiayi_picture/Chiayi_page11.png", "./chiayi_picture/Chiayi_page12.png", "./chiayi_picture/Chiayi_page13.png", "./chiayi_picture/Chiayi_page14.png","./chiayi_picture/Chiayi_page15.png","./chiayi_picture/Chiayi_page16.png", "./chiayi_picture/Chiayi_page17.png", "./chiayi_picture/Chiayi_page18.png", "./chiayi_picture/Chiayi_page19.png","./chiayi_picture/Chiayi_page20.png",
                 "./chiayi_picture/Chiayi_page21.png", "./chiayi_picture/Chiayi_page22.png", "./chiayi_picture/Chiayi_page23.png", "./chiayi_picture/Chiayi_page24.png","./chiayi_picture/Chiayi_page25.png","./chiayi_picture/Chiayi_page26.png", "./chiayi_picture/Chiayi_page27.png", "./chiayi_picture/Chiayi_page28.png", "./chiayi_picture/Chiayi_page29.png","./chiayi_picture/Chiayi_page30.png",
-                "./chiayi_picture/Chiayi_page31.png", "./chiayi_picture/Chiayi_page32.png", "./chiayi_picture/Chiayi_page33.png", "./chiayi_picture/Chiayi_page34.png","./chiayi_picture/Chiayi_page35.png","./chiayi_picture/Chiayi_page36.png", "./chiayi_picture/Chiayi_page37.png", "./chiayi_picture/Chiayi_Cover2.png"];
+                "./chiayi_picture/Chiayi_page31.png", "./chiayi_picture/Chiayi_page32.png", "./chiayi_picture/Chiayi_page33.png", "./chiayi_picture/Chiayi_page34.png","./chiayi_picture/Chiayi_page35.png","./chiayi_picture/Chiayi_Cover2.png"];
   var changeImage = document.getElementById("myImage");
   var changeNumber = document.getElementById("numberPage");
   var pageNumber = document.getElementById("pageNumber");
@@ -97,12 +97,12 @@ window.addEventListener('load', function () {
       }, 500);
     doSomething();
   }
-  var existingDiv11 = null;
+  var existingDiv12 = null;
   var slider = document.getElementById("slider");
   
   function doSomething(){
-    if (imageIndex == 11) {
-      if (!existingDiv11) {
+    if (imageIndex == 12) {
+      if (!existingDiv12) {
         var div = document.createElement("div");
         var aLink = document.createElement("a");
         div.id = "myDiv";
@@ -113,17 +113,17 @@ window.addEventListener('load', function () {
         div.classList.add("#myDiv");
         //將div新增到slider裡面
         slider.appendChild(div);
-        // 將div(新創建的元素)指定給全域變數的existingDiv11
+        // 將div(新創建的元素)指定給全域變數的existingDiv12
         existingDiv11 = div;
       } else {
         //如果有新增過div則直接新增
-        slider.appendChild(existingDiv11);
+        slider.appendChild(existingDiv12);
       }
       //判斷若頁數不為11時，則移除存在在slider中的div
-    } else if (imageIndex != 11) {
-      if (existingDiv11) {
-        slider.removeChild(existingDiv11);
-        existingDiv11 = null;
+    } else if (imageIndex != 12) {
+      if (existingDiv12) {
+        slider.removeChild(existingDiv12);
+        existingDiv12 = null;
       }
     }
   }
