@@ -298,6 +298,38 @@ button{
 
 
 /* RWD*/
+@media screen and (min-width: 667px) and (max-width: 1000px){
+    body{
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+    .content:hover{
+        background-color: transparent;
+    }
+    .catalog {
+        top: 129px;
+        left: 30px;
+    }
+    .arrow {
+        width: 580px;
+    }
+    .showPage{
+        bottom: 10px;
+        right: 20px;
+        z-index: 999;
+    }
+    #pageNumber{
+        bottom: 110px;
+        right: 25px;
+        transform: translateY(20%);
+    }
+    #pageNumber.active{
+        bottom: 135px;
+        right: 25px;
+        transform: translateY(20%);
+    }
+}
+
 @media screen and (min-width: 500px) and (max-width: 667px){
     body{
         display:flex ;
