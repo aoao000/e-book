@@ -177,6 +177,56 @@ input{
     transform: translate(-50%,-50%);
 }
 
+#audio{
+    width: 50px;
+    height: 50px;
+    border-radius: 100px 100px 100px 0px;
+    background-color: #f9c48f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#audio img{
+    width: 20px;
+    height: 20px;
+    scale: 0;
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) .5s;
+}
+
+#audio:hover img{
+    scale: 1;
+}
+
+
+#stop{
+    width: 50px;
+    height: 50px;
+    border-radius: 100px 100px 0px 100px;
+    background-color: #f9c48f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    transition: cubic-bezier(0.215, 0.610, 0.355, 1) 1s;
+}
+
+#stop img{
+    width: 20px;
+    height: 20px;
+    scale: 0;
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) .5s;
+}
+
+#stop:hover img{
+    scale: 1;
+}
 /* RWD iPhone14 SE*/
 @media screen and (min-width: 375px) and (max-width: 667px){
     body{

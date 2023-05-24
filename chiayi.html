@@ -8,16 +8,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="chiayi.css">
-    <title>chiayi</title>
+    <title>Chiayi</title>
 </head>
 <body>
 
     <div class="catalog">
         <div class="dot">
+            <a href="index.html"><img src="home.png" alt=""></a>
         </div>
         <div class="dot">
-        </div>
-        <div class="dot">
+            <a href="tainan.html"><img src="TAINAN.png" alt=""></a>
         </div>
     </div>
     <div class="showPage" id="showPage">P</div>
@@ -35,7 +35,13 @@
             <img src="arrow-previous.png" onclick="prevImage()" alt="">
         </div>
         <div id="slider">
-        </div>
+        </div>        
+    </div>
+    <div id="audio" onclick="playAudio()">
+        <img src="music.png" alt="">
+    </div>
+    <div id="stop" onclick="stopAudio()">
+        <img src="pause.png" alt="">
     </div>
     <div id="loading_start">
         <lottie-player src="https://lottie.host/2553e2c9-6a4d-4a71-9985-3984b2ea3351/r1sgUZaldx.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player>

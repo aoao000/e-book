@@ -20,7 +20,7 @@ window.addEventListener('load', function () {
   var images = ["./chiayi_picture/Chiayi_Cover1.png","./chiayi_picture/Chiayi_page1.png", "./chiayi_picture/Chiayi_page2.png", "./chiayi_picture/Chiayi_page3.png", "./chiayi_picture/Chiayi_page4.png","./chiayi_picture/Chiayi_page5.png","./chiayi_picture/Chiayi_page6.png", "./chiayi_picture/Chiayi_page7.png", "./chiayi_picture/Chiayi_page8.png", "./chiayi_picture/Chiayi_page9.png","./chiayi_picture/Chiayi_page10.png",
                 "./chiayi_picture/Chiayi_page11.png", "./chiayi_picture/Chiayi_page12.png", "./chiayi_picture/Chiayi_page13.png", "./chiayi_picture/Chiayi_page14.png","./chiayi_picture/Chiayi_page15.png","./chiayi_picture/Chiayi_page16.png", "./chiayi_picture/Chiayi_page17.png", "./chiayi_picture/Chiayi_page18.png", "./chiayi_picture/Chiayi_page19.png","./chiayi_picture/Chiayi_page20.png",
                 "./chiayi_picture/Chiayi_page21.png", "./chiayi_picture/Chiayi_page22.png", "./chiayi_picture/Chiayi_page23.png", "./chiayi_picture/Chiayi_page24.png","./chiayi_picture/Chiayi_page25.png","./chiayi_picture/Chiayi_page26.png", "./chiayi_picture/Chiayi_page27.png", "./chiayi_picture/Chiayi_page28.png", "./chiayi_picture/Chiayi_page29.png","./chiayi_picture/Chiayi_page30.png",
-                "./chiayi_picture/Chiayi_page31.png", "./chiayi_picture/Chiayi_page32.png", "./chiayi_picture/Chiayi_page33.png", "./chiayi_picture/Chiayi_page34.png","./chiayi_picture/Chiayi_page35.png","./chiayi_picture/Chiayi_page36.png", "./chiayi_picture/Chiayi_page37.png", "./chiayi_picture/Chiayi_Cover2.png"];
+                "./chiayi_picture/Chiayi_page31.png", "./chiayi_picture/Chiayi_page32.png", "./chiayi_picture/Chiayi_page33.png", "./chiayi_picture/Chiayi_page34.png","./chiayi_picture/Chiayi_page35.png","./chiayi_picture/Chiayi_page36.png", "./chiayi_picture/Chiayi_Cover2.png"];
   var changeImage = document.getElementById("myImage");
   var changeNumber = document.getElementById("numberPage");
   var pageNumber = document.getElementById("pageNumber");
@@ -145,6 +145,31 @@ function loooad(){
       test.removeChild(loader);
       }, 1000);
   });
+}
+
+var existaudio = null;
+var div_audio = document.getElementById("audio");
+var div_stop = document.getElementById("stop");
+var audio = document.createElement("audio");
+function playAudio() {
+    if(!existaudio){
+        audio.src = "bg1forchiayi.mp3";
+        audio.play();
+        audio.loop = true;
+        div_audio.appendChild(audio);
+        existaudio = div_audio;
+        div_stop.style.opacity = 1;
+    } else {
+        div_audio.appendChild(audio);
+        div_stop.style.opacity = 1;
+    }
+    audio.play();
+}
+
+function stopAudio() {
+  div_audio.removeChild(audio);
+  div_stop.style.opacity = 0;
+  existaudio = null;
 }
 
 
