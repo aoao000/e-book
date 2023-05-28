@@ -387,22 +387,24 @@ button{
 
 
 @media screen and (min-width: 500px) and (max-width: 667px){
-    body{
+    /* body{
         display:flex ;
         flex-direction: column;
         transition:  rotate cubic-bezier(0.175, 0.885, 0.32, 1.275) 2s;
-    }
+    } */
 
     .catalog{
-        position: relative;
-        left: -10px;
+        position: absolute;
+        top: 30px;
+        left: 250px;
         transform: translate(0%, -70%) rotate(90deg);
     }
 
     .content {
         min-width: 100%;
-        top: 53px;
-        left: -17px;
+        position: absolute;
+        top: 150px;
+        left: 0px;
         transform: rotate(90deg);
     }
 
@@ -420,7 +422,7 @@ button{
     }
 
     .showPage{
-        left: 64px;
+        left: 15px;
         bottom: 37px;
         transform: rotate(90deg);
         z-index: 999;
@@ -434,7 +436,7 @@ button{
     }
 
     #pageNumber.active{
-        right: 181px;
+        right: 200px;
         bottom: -81px;
         transform: rotate(90deg);
     }
@@ -449,6 +451,14 @@ button{
 
     .arrow img{
         width: 40px;
+    }
+
+    #audio img{
+        transform: rotate(90deg);
+    }
+
+    #stop img{
+        transform: rotate(90deg);
     }
 }
 
@@ -486,6 +496,7 @@ button{
     }
 
     .showPage{
+        position: absolute;
         left: 20px;
         bottom: 37px;
         transform: rotate(90deg);
