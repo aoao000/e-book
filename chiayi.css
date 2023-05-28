@@ -470,15 +470,16 @@ button{
     }
 
     .catalog{
-        position: relative;
-        left: -10px;
+        position: absolute;
+        top: 80px;
+        left: 130px;
         transform: translate(0%, -170%) rotate(90deg);
     }
 
     .content {
-        min-width: 100%;
-        top: 35px;
-        left: -17px;
+        min-width: 120%;
+        top: 150px;
+        left: -40px;
         transform: rotate(90deg);
     }
 
@@ -504,15 +505,16 @@ button{
     }
 
     #pageNumber{
-        max-height: 40%;
+        max-height: 25%;
         right: 150px;
         bottom: -65px;
         transform: rotate(90deg);
     }
 
     #pageNumber.active{
-        right: 135px;
-        bottom: -65px;
+        right: 100px;
+        bottom: -15px;
+        max-height: 25%;
         transform: rotate(90deg);
     }
 
